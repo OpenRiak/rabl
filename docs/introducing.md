@@ -37,6 +37,11 @@ without Basho to develop and maintain Riak, an open source alternative
 to replication appeared to be a need if the community was to benefit
 from continued development effort on a common code base.
 
+#### What's In A Name?
+
+The name rabl is a portmanteau concatenation of RabbitMQ Repl. Repl
+was the short-hand name for "MDC Replication" at Basho.
+
 ### Why is Rabl Realtime Only?
 
 It is assumed that Rabl will be used in conjunction with a background
