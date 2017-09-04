@@ -17,15 +17,18 @@ post and rabl are redundant, but maybe not. Read on for details.
 Basho's [Riak](https://github.com/basho/riak) database is Apache 2
 Licensed open source software, but their multi-datacentre replication
 (hereafter MDC) add on, dubbed RiakEE, was a paid for, proprietary,
-closed source product. It provided two key inter-acting features,
-"Realtime Replication" and "Fullsync Replication". Realtime is a
-process that makes a best endeavour to send any changed object to some
-configured remote cluster(s) as soon as the write is committed at the
-local cluster. Fullsync, as the name suggests, runs at some regular
-interval and ensures that any pair of clusters are up-to-date with
-each other and contain all the same data. A cluster that is
-replicating objects is called the _source_ cluster, and one that is
-receiving replicated objects is called the _sink_ cluster.
+closed source product. It provides two key inter-acting features,
+"Realtime Replication" and "Fullsync Replication".
+
+Realtime is a process that makes a best endeavour to send any changed
+object to some configured remote cluster(s) as soon as the write is
+committed at the local cluster.
+
+Fullsync, as the name suggests, runs at some regular interval and
+ensures that any pair of clusters are up-to-date with each other and
+contain all the same data. A cluster that is replicating objects is
+called the _source_ cluster, and one that is receiving replicated
+objects is called the _sink_ cluster.
 
 ### Why Open Source MDC?
 
