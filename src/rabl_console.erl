@@ -17,7 +17,7 @@
 show_config() ->
     application:get_all_env(rabl).
 
--spec add_hook(binary()) -> ok.
+-spec add_hook(binary()) -> list().
 add_hook(BinBucket) ->
     rabl_util:add_hook(BinBucket),
     rabl_util:get_bucket(BinBucket).
